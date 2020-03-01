@@ -17,6 +17,9 @@ describe('workspace-project App', () => {
     await page.click('#container input:nth-of-type(4)');
     await page.click('#container input:nth-of-type(5)');
 
+    await page.click('#container input[name="checkbox6"]');
+    await page.click('#container input[name="checkbox7"]');
+
     await page.type('input[type=text]', 'Hello 123');
 
     await browser.close();
